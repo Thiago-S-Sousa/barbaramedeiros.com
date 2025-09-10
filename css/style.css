@@ -995,7 +995,7 @@ html {
           font-weight: 300;
 
           & br {
-            /* display: block; */
+            display: block;
           }
 
           & span {
@@ -1023,7 +1023,7 @@ html {
 
       & .owner-active-mobile {
         display: flex;
-        padding-bottom: 2rem;
+        /* padding-bottom: 2rem; */
       }
 
       & .address {

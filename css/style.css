@@ -105,7 +105,7 @@ html {
           font-weight: 600;
           line-height: 1.5;
           letter-spacing: -0.1rem;
-          color: #000;
+          color: #000000be;
 
           & span {
             color: var(--brand-secondary);
@@ -125,7 +125,7 @@ html {
           font-weight: 400;
           line-height: 1.8;
 
-          color: #000;
+          color: #000000be;
         }
 
         & .contact {
@@ -142,7 +142,7 @@ html {
           padding: 2rem 3rem;
           margin-left: 0.5rem;
           border-radius: 50rem;
-          color: #000;
+          color: #000000be;
           border: 0.1rem solid rgba(0, 0, 0, 0.021);
           /* background-color: var(--brand-secondary); */
           background: linear-gradient(
@@ -157,7 +157,7 @@ html {
 
           & .icon {
             font-size: 1.4rem;
-            color: #000;
+            color: #000000b4;
           }
         }
 
@@ -192,13 +192,18 @@ html {
         font-weight: 400;
         color: #000000b4;
 
+        & br {
+          display: none;
+        }
+
         & span {
           font-weight: 600;
         }
       }
     }
 
-    & .owner {
+    & .owner,
+    .owner-active-mobile {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -222,6 +227,10 @@ html {
         font-weight: 500;
         text-transform: uppercase;
       }
+    }
+
+    & .owner-active-mobile {
+      display: none;
     }
 
     & .address {
@@ -251,7 +260,8 @@ html {
       height: 100%;
       width: 100%;
 
-      & .img {
+      & .img,
+      .img-active-mobile {
         height: 50rem;
         width: 50%;
 
@@ -277,6 +287,10 @@ html {
         }
       }
 
+      & .img-active-mobile {
+        display: none;
+      }
+
       & .text {
         display: flex;
         justify-content: center;
@@ -290,6 +304,10 @@ html {
         & .title {
           font-size: 3.5rem;
           font-weight: 600;
+
+          & br {
+            display: none;
+          }
 
           & span {
             color: var(--brand-secondary);
@@ -320,7 +338,7 @@ html {
           padding: 2rem 3rem;
           margin-left: 0.5rem;
           border-radius: 50rem;
-          color: #000;
+          color: #000000be;
           border: 0.1rem solid rgba(0, 0, 0, 0.021);
           /* background-color: var(--brand-secondary); */
           background: linear-gradient(
@@ -449,7 +467,8 @@ html {
       } */
     }
 
-    & .img-box {
+    & .img-box,
+    .img-box-active-mobile {
       height: 65rem;
       width: 50%;
 
@@ -468,8 +487,13 @@ html {
         width: 100%;
 
         background-color: rgba(255, 255, 255, 0.151);
-        border-radius: 2rem;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
       }
+    }
+
+    & .img-box-active-mobile {
+      display: none;
     }
   }
 
@@ -482,7 +506,8 @@ html {
     padding: 10rem 8rem;
     width: 100%;
 
-    & .img-box {
+    & .img-box,
+    .img-box-active-mobile {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -526,7 +551,7 @@ html {
         padding: 2rem 3rem;
         margin-left: 0.5rem;
         border-radius: 50rem;
-        color: #000;
+        color: #000000be;
         border: 0.1rem solid rgba(0, 0, 0, 0.021);
         /* background-color: var(--brand-secondary); */
         background: linear-gradient(
@@ -548,6 +573,10 @@ html {
       & .ebook-contact:hover {
         transform: scale(1.05);
       }
+    }
+
+    & .img-box-active-mobile {
+      display: none;
     }
 
     & .text-box {
@@ -858,6 +887,506 @@ html {
         color: #000000be;
         font-weight: 500;
         padding-left: 0.5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .main {
+    & .presentation {
+      padding-bottom: 2.5rem;
+
+      & .img-box {
+        & .img {
+          height: 40rem;
+          width: 100%;
+
+          background: url(../img/BarbaraMedeirosCapaFoco.jpeg) top center /
+            cover no-repeat;
+
+          mask-image: linear-gradient(
+            to bottom,
+            #fff 40%,
+            rgba(0, 0, 0, 0.0014) 100%
+          );
+
+          & .img-mask {
+            height: 100%;
+            width: 100%;
+          }
+        }
+
+        & .img-bottom {
+          height: 38rem;
+        }
+      }
+
+      & .presentation-text {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        top: 27rem;
+        border: none;
+        padding: 0;
+
+        & .logo-box {
+          align-items: center;
+          width: 100%;
+
+          & .logo {
+            height: 20rem;
+            width: 65%;
+          }
+
+          & h1 {
+            font-size: 3.2rem;
+            text-align: center;
+            padding-top: 1rem;
+
+            & span {
+            }
+          }
+        }
+
+        & .greeting-box {
+          align-items: center;
+
+          & .text {
+            text-align: center;
+            font-size: 2rem;
+            /* font-weight: 500; */
+            line-height: 1.5;
+          }
+
+          & .contact {
+            width: 80%;
+            font-size: 1.8rem;
+
+            & .icon {
+            }
+          }
+        }
+      }
+    }
+
+    & .info {
+      flex-direction: column;
+      justify-content: center;
+      gap: 2.5rem;
+      padding: 5rem 2.5rem;
+
+      & .icon {
+        font-size: 2.4rem;
+      }
+
+      & .info-service {
+        /* gap: 0; */
+
+        & .icon {
+          /* padding-right: 0.5rem; */
+        }
+
+        & .text {
+          font-size: 1.6rem;
+          text-align: center;
+          font-weight: 300;
+
+          & br {
+            /* display: block; */
+          }
+
+          & span {
+            font-family: 400;
+          }
+        }
+      }
+
+      & .owner,
+      .owner-active-mobile {
+        text-align: center;
+        & .name {
+          font-size: 1.8rem;
+          font-weight: 400;
+        }
+        & .crn {
+          font-size: 1.6rem;
+          font-weight: 400;
+        }
+      }
+
+      & .owner {
+        display: none;
+      }
+
+      & .owner-active-mobile {
+        display: flex;
+        padding-bottom: 2rem;
+      }
+
+      & .address {
+        & .text {
+          font-size: 1.6rem;
+          text-align: center;
+        }
+      }
+    }
+
+    & .fundamental {
+      padding: 8rem 2.5rem;
+
+      & .fundamental-box {
+        flex-direction: column;
+        gap: 4rem;
+
+        & .img,
+        .img-active-mobile {
+          height: 28rem;
+          width: 100%;
+
+          & .img-mask {
+            height: 100%;
+            width: 100%;
+          }
+        }
+
+        & .img {
+          display: none;
+        }
+
+        & .img-active-mobile {
+          display: flex;
+        }
+
+        & .text {
+          align-items: center;
+          text-align: center;
+          /* gap: 2.5rem; */
+          width: 100%;
+
+          & .title {
+            font-size: 2.6rem;
+            line-height: 1.4;
+
+            & br {
+              display: block;
+            }
+
+            & span {
+            }
+          }
+
+          & p {
+            /* font-size: 2rem; */
+            line-height: 1.6;
+          }
+
+          & .warning {
+            font-size: 1.4rem;
+            font-weight: 700;
+          }
+
+          & .contact {
+            width: 75%;
+            font-size: 1.6rem;
+            & .icon {
+            }
+          }
+        }
+      }
+
+      & .balance {
+        gap: 0;
+
+        & .balance-box {
+          height: 100%;
+          width: 100%;
+          gap: 2rem;
+          padding: 3rem;
+
+          border-bottom-left-radius: 5rem;
+          border-bottom-right-radius: 5rem;
+
+          & .icon-box {
+            /* height: 7rem;
+            width: 7rem; */
+
+            & .icon {
+              /* font-size: 3rem; */
+            }
+          }
+
+          & .title {
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 1.4;
+          }
+
+          & .subtitle {
+            /* font-size: 2rem; */
+            font-weight: 500;
+          }
+        }
+
+        & .balance-box-empty {
+          display: none;
+        }
+      }
+    }
+
+    & .about {
+      flex-direction: column;
+      padding: 8rem 2.5rem;
+      gap: 2rem;
+
+      & .about-text-box {
+        /* align-items: center; */
+        gap: 2rem;
+
+        height: 100%;
+        width: 100%;
+        padding: 3rem 2.5rem;
+
+        border-radius: 2rem;
+
+        & .title {
+          font-size: 2.6rem;
+          line-height: 1.4;
+
+          & span {
+          }
+        }
+
+        & p {
+          /* font-size: 2.2rem; */
+          /* font-weight: 600; */
+          line-height: 1.4;
+
+          & span {
+          }
+        }
+      }
+
+      & .img-box,
+      .img-box-active-mobile {
+        height: 38rem;
+        width: 100%;
+
+        border-radius: 5rem;
+
+        & .img-mask {
+          height: 100%;
+          width: 100%;
+
+          border-radius: 5rem;
+        }
+      }
+
+      & .img-box {
+        display: none;
+      }
+
+      & .img-box-active-mobile {
+        display: flex;
+      }
+    }
+
+    & .ebook {
+      flex-direction: column;
+      gap: 3rem;
+      padding: 8rem 2.5rem 5rem 2.5rem;
+
+      & .img-box,
+      .img-box-active-mobile {
+        gap: 2.5rem;
+        width: 100%;
+
+        & .img {
+          height: 38rem;
+          width: 100%;
+          /* border-radius: 5rem; */
+
+          & .img-mask {
+            /* border-radius: 5rem; */
+          }
+        }
+
+        & .ebook-contact {
+          width: 75%;
+          font-size: 1.8rem;
+          & .icon {
+          }
+        }
+      }
+
+      & .img-box {
+        display: none;
+      }
+
+      & .img-box-active-mobile {
+        display: flex;
+      }
+
+      & .text-box {
+        /* align-items: center; */
+        gap: 2rem;
+        width: 100%;
+        padding: 0 2.5rem;
+
+        & .title {
+          font-size: 1.4rem;
+        }
+
+        & .subtitle {
+          font-size: 2.6rem;
+          line-height: 1.4;
+        }
+
+        & p {
+          /* font-size: 2.2rem; */
+          /* font-weight: 600; */
+          line-height: 1.4;
+        }
+      }
+    }
+
+    & .bottom-empty-box {
+      height: 10rem;
+      width: 100%;
+      background-color: var(--brand-tertiary);
+    }
+
+    & .because {
+      gap: 3rem;
+      padding: 8rem 2.5rem;
+
+      & .because-title {
+        font-size: 2.6rem;
+        line-height: 1.4;
+
+        & span {
+        }
+      }
+
+      & .because-cards-box {
+        gap: 2rem;
+
+        & .card {
+          /* gap: 2rem; */
+          height: 30rem;
+          width: 100%;
+
+          & .title {
+            font-size: 2rem;
+            line-height: 1.2;
+          }
+
+          & p {
+            line-height: 1.4;
+          }
+        }
+      }
+    }
+
+    & .service {
+      gap: 4rem;
+      padding: 8rem 2rem;
+
+      & .service-title {
+        font-size: 2.6rem;
+        line-height: 1.4;
+      }
+
+      & .service-cards-box {
+        gap: 2rem;
+
+        & .card {
+          height: 60rem;
+          width: 100%;
+          padding: 2.5rem;
+
+          & .logo {
+            height: 15rem;
+            width: 75%;
+
+            /* margin: 0; */
+            margin-top: -3.5rem;
+          }
+
+          & .card-text-box {
+            margin-top: -1rem;
+
+            & .title {
+              font-size: 2rem;
+            }
+
+            & p {
+              font-size: 1.6rem;
+              font-weight: 400;
+              padding-bottom: 0;
+            }
+
+            & .contact {
+              /* font-size: 1.6rem; */
+              font-size: 1.8rem;
+              width: 90%;
+              padding: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & .footer {
+    padding: 8rem 2.5rem;
+
+    & .footer-box {
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
+      align-items: flex-start;
+
+      & .icon {
+      }
+
+      & .footer-contact {
+        flex-direction: column;
+
+        & .number,
+        .instagram {
+          gap: 2rem;
+        }
+      }
+
+      & .footer-address {
+        gap: 2rem;
+      }
+    }
+
+    & .footer-copy {
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 2rem;
+
+      font-size: 1.4rem;
+
+      & #footer-text,
+      #dev {
+        width: 100%;
+      }
+
+      & #footer-text {
+      }
+
+      & #dev {
+        justify-content: flex-start;
+        & a {
+          font-weight: 400;
+        }
       }
     }
   }

@@ -1138,7 +1138,7 @@ html {
 
     & .about {
       flex-direction: column;
-      padding: 8rem 2.5rem;
+      padding: 0 2.5rem;
       gap: 2rem;
 
       & .about-text-box {

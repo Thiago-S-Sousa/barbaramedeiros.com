@@ -60,7 +60,7 @@ html {
           justify-content: center;
           align-items: center;
 
-          height: 80rem;
+          height: 100%;
           width: 100%;
 
           background-color: rgba(255, 255, 255, 0.13);
@@ -910,15 +910,10 @@ html {
             #fff 40%,
             rgba(0, 0, 0, 0.0014) 100%
           );
-
-          & .img-mask {
-            height: 100%;
-            width: 100%;
-          }
         }
 
         & .img-bottom {
-          height: 38rem;
+          height: 34rem;
         }
       }
 
@@ -942,9 +937,10 @@ html {
           }
 
           & h1 {
-            font-size: 3.2rem;
+            font-size: 3rem;
             text-align: center;
-            padding-top: 1rem;
+            line-height: 1.4;
+            /* padding-top: 1rem; */
 
             & span {
             }
@@ -956,14 +952,14 @@ html {
 
           & .text {
             text-align: center;
-            font-size: 2rem;
+            font-size: 1.8rem;
             /* font-weight: 500; */
-            line-height: 1.5;
+            line-height: 1.4;
           }
 
           & .contact {
             width: 80%;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
 
             & .icon {
             }

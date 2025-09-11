@@ -975,7 +975,7 @@ html {
       padding: 5rem 2.5rem;
 
       & .icon {
-        font-size: 2rem;
+        /* font-size: 2rem; */
       }
 
       & .info-service {
@@ -988,7 +988,7 @@ html {
         & .text {
           font-size: 1.4rem;
           text-align: center;
-          font-weight: 300;
+          /* font-weight: 300; */
 
           & br {
             /* display: block; */
@@ -1026,7 +1026,7 @@ html {
       & .address {
         & .text {
           font-size: 1.4rem;
-          font-weight: 300;
+          /* font-weight: 300; */
           text-align: center;
         }
       }

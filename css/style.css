@@ -962,7 +962,7 @@ html {
           }
 
           & .contact {
-            width: 80%;
+            width: 85%;
             font-size: 1.6rem;
 
             & .icon {
@@ -1222,7 +1222,7 @@ html {
 
         & .ebook-contact {
           width: 75%;
-          font-size: 1.8rem;
+          /* font-size: 1.8rem; */
           & .icon {
           }
         }
@@ -1337,9 +1337,9 @@ html {
 
             & .contact {
               /* font-size: 1.6rem; */
-              font-size: 1.8rem;
+              /* font-size: 1.8rem; */
               width: 90%;
-              padding: 2rem;
+              /* padding: 2rem; */
             }
           }
         }

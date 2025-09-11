@@ -971,11 +971,11 @@ html {
     & .info {
       flex-direction: column;
       justify-content: center;
-      gap: 2.5rem;
+      gap: 2rem;
       padding: 5rem 2.5rem;
 
       & .icon {
-        font-size: 2.4rem;
+        font-size: 2rem;
       }
 
       & .info-service {
@@ -986,12 +986,12 @@ html {
         }
 
         & .text {
-          font-size: 1.6rem;
+          font-size: 1.4rem;
           text-align: center;
           font-weight: 300;
 
           & br {
-            display: block;
+            /* display: block; */
           }
 
           & span {
@@ -1003,12 +1003,13 @@ html {
       & .owner,
       .owner-active-mobile {
         text-align: center;
+
         & .name {
-          font-size: 1.8rem;
+          font-size: 1.6rem;
           font-weight: 400;
         }
         & .crn {
-          font-size: 1.6rem;
+          font-size: 1.4rem;
           font-weight: 400;
         }
       }
@@ -1024,7 +1025,8 @@ html {
 
       & .address {
         & .text {
-          font-size: 1.6rem;
+          font-size: 1.4rem;
+          font-weight: 300;
           text-align: center;
         }
       }
